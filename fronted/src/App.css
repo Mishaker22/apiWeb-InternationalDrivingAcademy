@@ -86,12 +86,6 @@ tr:hover td{
   background-color: rgb(0, 0, 0) !important;
 }
 
-body {
-  overflow-x: hidden;
-  min-height: 100vh;
-  background-color: #000;
-}
-
 .cardBody {
   background-color: rgb(0, 0, 0) !important;
 }
@@ -210,18 +204,7 @@ button:not(:disabled),
   cursor: pointer;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  height: auto;
-  width: 100%;
-}
-nav a.active{
-  text-decoration:underline;
-  font-weight: bold;
-  font-family: quantify;
-  letter-spacing: 2px;
-}
+
 
 .sidebar-wrapper {
   min-height: 70vh;
@@ -247,10 +230,6 @@ nav a.active{
   background-repeat: no-repeat;
 }
 
-a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
 .LinkInfo {
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -448,13 +427,7 @@ a {
   color: rgb(197, 83, 83);
   opacity: 1;
 }
-.txtServices{
-  color: #000000;
-  margin: 2rem;
-  font-family: Modern;
-  font-size: 4rem;
 
-}
 .colorProfileCard
 {
   background: #29000a;
@@ -923,15 +896,6 @@ h1 span{
   background: #0c192c;
   border-left: 1px solid black;
   animation: maquina 5s infinite alternate steps(10);
-}
-.containerServices{
-  position: relative;
-  display: flex;
-  padding: 80px 40px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 80px;
 }
 .cardServices{
   position: relative;

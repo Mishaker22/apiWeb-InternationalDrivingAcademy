@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #111;
+}
+/*INICIO PRESENTACION */
+.containerInicio
+{
+    width: 100%;
+    height: 100vh;
+}
+.containerInicio .fondoVector
+{
+    background-image: url("./images/Fondos/carretera.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.fondoTransparent
+{
+    width: 100%;
+    height: 100vh;
+    background: #1111117a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.fondoTransparent .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+.fondoTransparent .content h2
+{
+    font-size: clamp(2.2rem, 4vw, 5rem);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-style: oblique;
+    margin-top: 3rem;
+}
+.fondoTransparent .content h2 span
+{
+    font-weight:500;
+    font-style: normal;
+}
+.fondoTransparent .content h2 span:nth-child(2)
+{
+    font-style: oblique;
+    font-weight: bold;
+}
+.fondoTransparent .content h3
+{
+    font-size: clamp(1rem, 1vw, 1.7rem);
+    color: white;
+    margin-top: 2rem;
+}
+.btnReservar
+{
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    color: #fff;
+    background: #dc3545;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+.btnReservar:hover
+{
+    color: #fff8e8;
+    letter-spacing: 6px;
+}
+/*NAVBAR */
+nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition:0.5s ;
+}
+nav.scrolled {
+    background-color: #fff8e88a;
+    padding: 10px 100px; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+nav .logo
+{
+    filter: invert(50%) brightness(200%);
+    width: 250px;
+    height: 62px;
+}
+nav.scrolled .logo
+{
+    filter:contrast(200%);
+}
+nav .logo img
+{
+    width: 100%;
+}
+nav .navigation
+{
+    position: relative;
+    display: flex;
+    padding-top: 1rem;
+}
+
+nav .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation li a
+{
+    text-decoration: none;
+    color: #fff8e8;
+    font-weight: 500;
+}
+nav.scrolled .navigation li a
+{
+    color: #111;
+    font-weight: 500;
+}
+nav .navigation li a:hover
+{
+    color: #ff3d50;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+/*ABOUT*/
+.about
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.about .contentBx
+{
+    background: #222;
+    padding: 100px;
+    width: 50%;
+  
+}
+.heading
+{
+    color: #ff3d50;
+    font-size: clamp(2rem, 4vw, 5rem);
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    font-family: cream;
+}
+.about .contentBx .text
+{
+    color: #fff8e8;
+    font-size: clamp(0.8rem, 1.2vw, 1.3rem);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.about .imgBx
+{
+    background-image: url("./images/Fondos/patronSeñales.jpeg");
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    filter:invert(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .imgBx .containerImg
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff8e8d2;
+    filter:invert(100%);
+    border-radius: 15px;
+}
+.about .imgBx img
+{
+    position: absolute;
+    filter: contrast(200%) ;
+}
+.services
+{
+    background: #dc3545;
+    padding: 100px;
+    text-align: center;
+}
+.services .containerServices
+{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+#txtServices
+{
+    color: #fff8e8;
+}

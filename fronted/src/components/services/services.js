@@ -28,36 +28,11 @@ export const Services = () => {
             </div> : (
                 <Fragment>
                     <MetaData title={"services"}></MetaData>
-                    <div className='container-fluid fondoNosotros'>
-                        <div className='row'>
-                            <div id="contenedorServicios" className='col-12 col-md-12'>
-                                <div className='row d-flex justify-content-center align-items-center' >
-                                    <h1 className='txtServices mb-5'>Services</h1>
-                                    {services && services.map(service => (
-                                        <div key={service._id} className="col-sm-12 col-md-4 ">
-                                            <div className='containerServices '>
-                                                <div className='cardServices'>
-                                                    <div className='lines'></div>
-                                                    <div className='d-flex justify-content-center align-items-center imgServices '>
-                                                        <b><h2 id='tloService' className='text-center'>{service.nombre}</h2></b>
-                                                    </div>
-                                                    <div className='contentServices'>
-                                                        <div className='details position-relative'>
-                                                            <p><b className='cafe text-white'>{service.descripcion}</b></p>
-                                                            <div id='botonAlBorde' className='botonAlBorde'>
-                                                                <Link to={`/service/${service._id}`} id="button" type='button' className="btn btn-outline-danger w-50 ms-10 text-white cafe float-bot"> <b>More Details </b><i className="bi bi-arrow-right"></i></Link>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
+                    <div className='services'>
+                        <h2 className='heading' id='txtServices'>Servicios</h2>
+                        <div className='containerServices'>
+                            
                         </div>
-
-
                     </div>
                 </Fragment>
 

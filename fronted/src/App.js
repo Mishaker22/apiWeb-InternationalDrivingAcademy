@@ -1,3 +1,4 @@
+import './api.css';
 import './App.css';
 import React, { useEffect } from 'react';
 import { NavBar } from './components/layout/NavBar';
@@ -42,7 +43,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header></Header>
         <NavBar></NavBar>
         <Routes>
           <Route path='/' element={<Inicio></Inicio>}></Route>
