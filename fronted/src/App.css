@@ -86,9 +86,7 @@ tr:hover td{
   background-color: rgb(0, 0, 0) !important;
 }
 
-.cardBody {
-  background-color: rgb(0, 0, 0) !important;
-}
+
 .divEmployess{
   display: flex;
   justify-content: center;
@@ -897,134 +895,7 @@ h1 span{
   border-left: 1px solid black;
   animation: maquina 5s infinite alternate steps(10);
 }
-.cardServices{
-  position: relative;
-  width: 16rem;
-  height: 6.5rem;
-  transition: 0.5s;
-}
-.cardServices:hover{
-  width: 20rem;
-  height: 25rem;
-}
-.cardServices .lines{
-  inset: 0;
-  overflow: hidden;
-  position: absolute;
-}
 
-.cardServices:hover .lines::before{
-  animation-play-state: running;
-}
-@keyframes animateLines {
-  0%
-  {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100%
-  {
-    transform:translate(-50%, -50%)  rotate(360deg)
-  }
-}
-.cardServices .lines::after{
-  content: '';
-  position: absolute;
-  inset: 3px;
-  background-color: rgba(0, 0, 0, 0.5) !important;
-}
-.cardServices .imgServices{
-  position: absolute !important;
-  top: -1px;
-  left: 50%;
-  width:15rem;
-  height: 6rem;
-  z-index: 10;
-  transform: translateX(-50%);
-  background: #000000;
-  transition: 0.5s;
-  overflow: hidden;
-  color: #ff0000;
-  font-family: quantify;
-}
-.cardServices:hover .imgServices
-{
-  top: 20px;
-  width: 13rem;
-  height: 7rem;
-}
-.cardServices .imgServices::before
-{
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 15rem;
-  height: 5rem;
-  background: linear-gradient(transparent,#ff3c7b,#ff3c7b,#ff3c7b,transparent);
-  animation: animateLines2 6s linear infinite;
-  animation-play-state: paused;
-}
-.cardServices:hover .imgServices::before
-{
-  animation-play-state: running;
-}
-@keyframes animateLines2 {
-  0%
-  {
-    transform: translate(-50%,-50%)rotate(360deg);
-  }
-  100%
-  {
-    transform: translate(-50%,-50%)rotate(0deg);
-  }
-}
-.cardServices .imgServices::after
-{
-  content: '';
-  position: absolute;
-  inset: 3px;
-  background: rgb(255, 239, 239);
-}
-.cardServices .imgServices h2{
-  position: relative;
-  z-index: 1;
-}
-
-.cardServices .contentServices{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  overflow: hidden;
-}
-.cardServices .contentServices .details
-{
-  padding: 30px 20px;
-  text-align: center;
-  width: 100%;
-  transition: 0.5s;
-  transform: translateY(15px)
-}
-.cardServices:hover .contentServices .details
-{
-  transform: translateY(110px);
-}
-.cardServices .contentServices .details h2{
-  font-family: modern;
-  color: #da001d;
-}
-.cardServices .contentServices .details p{
-  color: rgb(0, 0, 0);
-  opacity: 0;
-  transition: 0.5s;
-}
-.cardServices:hover .contentServices .details p
-{
-  opacity: 1;
-}
 .containerListServices{
   position: relative;
   z-index: 1;
