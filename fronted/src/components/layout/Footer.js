@@ -3,36 +3,32 @@ import React, { Fragment } from 'react'
 export const Footer = () => {
     return (
         <Fragment>
-            <footer className='border-top border-ligth'>
-                <div class="footer_top">
-                    <div class="contact_info">
-                        <div className='row w-100'>
-                            <div className='col-12 col-md-3'>
-                                <h2 className="quantify text-center p-1 text-danger">We Speak English</h2>
-                            </div>
-                            <div className='col-12 col-md-4'>
-                                <span className='text-white'><b>Email</b><br></br></span>
-                                <a className='text-white'>
-                                    <span className="align-middle vertical-alignment"><i class="bi bi-envelope-at"></i> Interdrivingschool@hotmail.com </span>
-                                </a>
-                            </div>
-                            <div className='col-12 col-md-2'>
-                                <span className='text-white'><b>Mobile number</b><br></br></span>
-                                <a className='text-white'>
-                                    <span className="align-middle vertical-alignment"><i class="bi bi-whatsapp"></i>  305 - 491 - 2288</span>
-                                </a>
-                            </div>
-                            <div className='col-12 col-md-3'>
-                                <span className='text-white'><b>Follow us</b><br></br></span>
-                                <span className="align-middle vertical-alignment text-white"><i class="bi bi-facebook"></i> <a href="https://instagram.com/internationaldrivingacademy?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="bi bi-instagram"></i></a> @
-internationaldrivingacademy</span>
-                            </div>
-                        </div>
+            <footer>
+                <div className='container containerFooter'>
+                    <div className='footerContent'>
+                        <h3 id='contactH3'>Contactanos</h3>
+                        <p><i class="bi bi-whatsapp"></i>(305) 491-2288</p>
+                        <p><i class="bi bi-envelope-at"></i> Interdrivingschool@hotmail.com</p>
+                    </div>
+                    <div className='footerContent'>
+                        <h3>Links</h3>
+                        <ul className='list'>
+                            <li><a href="/#Inicio">Home</a></li>
+                            <li><a href="/#About">About Us</a></li>
+                            <li><a href="/#Services">Services</a></li>
+                            <li><a href="7#Contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div className='footerContent'>
+                        <h3>Siguenos</h3>
+                        <ul className='socialIcons'>
+                            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+                            <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                        </ul>
                     </div>
                 </div>
-                <div className='py-1 border-2  footer'>
-                <span class="cafe"><i class="bi bi-c-circle"></i> Copyright 2022 - International Driving academy - Designed by</span>
-                        <a href='https://github.com/Mishaker22' className='text-danger'> Mishaker</a>
+                <div className='footerBot'>
+                    <span class="cafe"><i class="bi bi-c-circle"></i> Copyright 2023 • International Driving School • Designed by <a href='https://github.com/Mishaker22'> Mishaker</a></span>
                 </div>
             </footer>
         </Fragment>

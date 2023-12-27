@@ -9,7 +9,7 @@ export const AboutUs = () => {
       <MetaData title="About Us"></MetaData>
       <Fragment>
         <div className='about'>
-        <div className='imgBx'>
+          <div className='imgBx'>
             <div className='containerImg'><img src={logo} alt="International" /></div>
           </div>
           <div className='contentBx'>
@@ -20,7 +20,6 @@ export const AboutUs = () => {
               dedicados a enseñar de todo su conocimiento y experiencia para convertir a nuestros
               estudiantes en conductores responsables  y ejemplares de por vida.</p>
           </div>
-          
         </div>
       </Fragment>
     </Fragment>

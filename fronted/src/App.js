@@ -34,6 +34,7 @@ import { PreinscriptionDetails } from './components/admin/preinscriptionDetails'
 import { MyOrder } from './components/preinscriptions/myOrder';
 import { MyOrderDetails } from './components/preinscriptions/DetailsMyOrder';
 import { Employee } from './components/admin/employee';
+import { Reviews } from './components/reviews';
 
 
 function App() {
@@ -61,6 +62,8 @@ function App() {
           <Route path='/forgotPassword' element={<ForgotPassword></ForgotPassword>}></Route>
           <Route path='/resetPassword/:token' element={<ResetPassword></ResetPassword>}></Route>
           <Route path='/preinscription/:idService/:idProduct' element={<Preinscription></Preinscription>}></Route>
+          <Route path='/#reviews' element={<Reviews></Reviews>}></Route>
+          
 
           {/*Rutas Protegida*/}
           <Route path='/admin/dashboard' element={<ProtectedRoutes isAdmin={true}><Dashboard></Dashboard></ProtectedRoutes>}></Route>
@@ -74,7 +77,6 @@ function App() {
           <Route path='/admin/updateUser/:id' element={<ProtectedRoutes isAdmin={true}><UpdateUser></UpdateUser></ProtectedRoutes>}></Route>
           <Route path='/admin/preinscriptionDetails' element={<ProtectedRoutes isAdmin={true}><PreinscriptionDetails></PreinscriptionDetails></ProtectedRoutes>}></Route>
           <Route path='/admin/employees' element={<ProtectedRoutes isAdmin={true}><Employee></Employee></ProtectedRoutes>}></Route>
-
         </Routes>
         <Footer></Footer>
       </div>

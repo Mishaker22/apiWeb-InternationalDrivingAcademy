@@ -7,6 +7,7 @@ import MetaData from './layout/metadata';
 import { Banner } from './banner';
 import { AboutUs } from './abouts_us';
 import {Services} from './services/services'
+import { Reviews } from './reviews';
 
 export const Inicio = () => {
     return (
@@ -20,6 +21,9 @@ export const Inicio = () => {
             </section>
             <section id='services'>
                 <Services></Services>
+            </section>
+            <section id='reviews'>
+                <Reviews></Reviews>
             </section>
         </Fragment>
     )
