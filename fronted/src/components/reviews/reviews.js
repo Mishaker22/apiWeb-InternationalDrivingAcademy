@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
-import cs_1 from '../images/Review1.jpeg'
-import cs_2 from '../images/Review2.jpeg'
-import cs_3 from '../images/Review3.jpeg'
+import cs_1 from '../../images/Review1.jpeg'
+import cs_2 from '../../images/Review2.jpeg'
+import cs_3 from '../../images/Review3.jpeg'
 export const Reviews = () => {
     return (
         <Fragment>
@@ -52,7 +52,7 @@ export const Reviews = () => {
                                     </div>
                                 </div>
                             </div>
-                            <button>Ver Mas Reviews</button>
+                            <button><a href="/comentarios">Ver Mas Reviews</a></button>
                         </div>
                     </div>
                 </div>

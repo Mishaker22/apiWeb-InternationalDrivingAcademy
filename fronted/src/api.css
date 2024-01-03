@@ -380,52 +380,52 @@ nav .navigation li a:hover {
     background-image: radial-gradient(ellipse farthest-corner at -6000px -30px, #dc3545 71%, rgba(0, 0, 0, 0) 0%, #222 70%);
     margin-bottom: 3rem;
 }
-.containerReviews
-{
+
+.containerReviews {
     max-width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     gap: 1rem;
 }
-.containerInfoContact
-{
+
+.containerInfoContact {
     color: #fff8e8;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
-.containerInfoContact h1
-{
+
+.containerInfoContact h1 {
     text-align: left;
     letter-spacing: 5px;
     font-family: Poppins;
     font-weight: 700;
 }
-.containerInfoContact .data
-{
+
+.containerInfoContact .data {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
-.containerInfoContact .data p
-{
+
+.containerInfoContact .data p {
     font-size: clamp(1rem, 1.4vw, 1.5rem);
     font-family: cafe;
 }
-.containerInfoContact .data p i
-{
+
+.containerInfoContact .data p i {
     font-size: 2rem;
     color: #ff5768;
     margin-right: 10px;
 }
-.containerInfoContact .links
-{
+
+.containerInfoContact .links {
     display: flex;
     gap: 15px;
 }
-.containerInfoContact .links a
-{
+
+.containerInfoContact .links a {
     text-decoration: none;
     width: 40px;
     height: 40px;
@@ -433,109 +433,200 @@ nav .navigation li a:hover {
     text-align: center;
     transition: .1s;
 }
-.containerInfoContact .links a i
-{
+
+.containerInfoContact .links a i {
     color: #fff8e8;
     line-height: 40px;
     font-size: 20px;
 }
-.containerReview
-{
+
+.containerReview {
     display: grid;
     gap: 2rem;
 }
-.containerReview .card
-{
+
+.containerReview .card {
     padding: 2rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     background-color: #fff8e8;
-    border-radius: 1rem ;
+    border-radius: 1rem;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, .2);
     cursor: pointer;
 }
-.containerReview .card img
-{
+
+.containerReview .card img {
     min-width: 75px;
     height: 75px;
     border-radius: 100%;
 
 }
-.containerReview .card .cardContentReview
-{
+
+.containerReview .card .cardContentReview {
     display: flex;
     gap: 1rem;
 }
-.containerReview .card .cardContentReview span i
-{
+
+.containerReview .card .cardContentReview span i {
     font-size: 2rem;
     color: #ff3d50;
 }
 
-.containerReview .card .cardContentReview .cardDetails p
-{
+.containerReview .card .cardContentReview .cardDetails p {
     font-style: italic;
     color: #b42b38;
     margin-bottom: 1rem;
 }
-.containerReview .card .cardContentReview .cardDetails h4
-{
+
+.containerReview .card .cardContentReview .cardDetails h4 {
     text-align: right;
     font-size: clamp(1rem, 1.3vw, 1.3rem);
     font-weight: 500;
 }
-.containerReview button
-{
+
+.containerReview button {
     padding: 1rem 2rem;
     margin-top: 1rem;
     outline: none;
     border-radius: 5px;
-    background: linear-gradient( to right, #ff3c4f , #ff5768);
+    background: linear-gradient(to right, #ff3c4f, #ff5768);
     color: white;
     font-size: 1rem;
     cursor: pointer;
 }
-/*FOOTER*/
-footer
+.containerReview button a{
+    text-decoration: none;
+    color: white;
+}
+.containerReview button:hover{
+    background: #b42b38;
+    color: #fff8e8;
+}
+/*Comentarios*/
+.alert
 {
+    margin: 1rem;
+}
+#txtComentario
+{
+    text-align: center;
+    color: #ff5768;
+    font-family: Modern;
+    margin-top: 4rem;
+}
+.fondoReview
+{
+    background: #111;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+.divComentar
+{
+    width: 100%;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.ContainerOpinion
+{
+    width: 400px;
+    background-color: #111;
+    border-radius:25px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 1);
+}
+.ContainerOpinion h3
+{
+    font-family: modern;
+    color: white;
+    font-size: clamp(1.2rem, 1.2vw, 1.5rem);
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+.ContainerOpinion h3 span
+{
+    color: #dc3545;
+    font-family: modern;
+    font-style:oblique;
+}
+.textarea {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+.textarea textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid #000;
+    background-color: #202020;
+    padding: 10px;
+    color: #eee;
+    resize: none;
+}
+.divComentar button {
+    border: none;
+    background-color: #ff3c4f;
+    font-family: cafe;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.divComentar button:hover {
+    background-color: #b42b38;
+}
+/*FOOTER*/
+footer {
     background: #343434;
-    padding-top: 50px;   
+    padding-top: 25px;
     position: relative;
 }
-.containerFooter
-{
+
+.containerFooter {
     width: 100%;
     padding: 2rem;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.containerFooter .footerContent
-{
-    width: 33.3%;
+.containerFooter .footerContent {
+    flex:1;
+    max-width: 300px;
+    margin: 0 10px;
 }
-.containerFooter .footerContent h3
-{
+
+.containerFooter .footerContent h3 {
     font-size: clamp(1rem, 1.4vw, 1.5rem);
     margin-bottom: 1rem;
     text-align: center;
     color: #ff5768;
 }
-#contactH3
-{
+
+#contactH3 {
     text-align: left;
 }
-.containerFooter .footerContent p
-{
+
+.containerFooter .footerContent p {
     margin: auto;
     padding: 7px;
     color: #fff8e8;
     font-family: cafe;
 }
-.containerFooter .footerContent p i
-{
+
+.containerFooter .footerContent p i {
     background: #ff5768;
     text-align: center;
     transition: .1s;
@@ -544,33 +635,33 @@ footer
     margin-right: 10px;
     padding: .4rem;
 }
-.containerFooter .footerContent ul
-{
+
+.containerFooter .footerContent ul {
     text-align: center;
 }
-.containerFooter .footerContent ul.list
-{
+
+.containerFooter .footerContent ul.list {
     padding: 0;
 }
-.containerFooter .footerContent ul.list li
-{
+
+.containerFooter .footerContent ul.list li {
     width: auto;
     text-align: center;
     list-style-type: none;
     padding: 7px;
     position: relative;
 }
-.containerFooter .footerContent ul.list li a
-{
+
+.containerFooter .footerContent ul.list li a {
     text-decoration: none;
     color: #fff8e8;
 }
-.containerFooter .footerContent ul.list li a:hover
-{
+
+.containerFooter .footerContent ul.list li a:hover {
     color: #dc3545;
 }
-.containerFooter .footerContent ul.list li::before
-{
+
+.containerFooter .footerContent ul.list li::before {
     content: '';
     position: absolute;
     transform: translate(-50%, -50%);
@@ -581,23 +672,23 @@ footer
     background: #ff3d50;
     transition-duration: .5s;
 }
-.containerFooter .footerContent ul.list li:hover::before
-{
+
+.containerFooter .footerContent ul.list li:hover::before {
     width: 70px;
 }
-.containerFooter .footerContent ul.socialIcons
-{
+
+.containerFooter .footerContent ul.socialIcons {
     text-align: center;
     padding: 0;
 }
-.containerFooter .footerContent ul.socialIcons li
-{
+
+.containerFooter .footerContent ul.socialIcons li {
     display: inline-block;
     text-align: center;
     padding: 5px;
 }
-.containerFooter .footerContent ul.socialIcons li a i
-{
+
+.containerFooter .footerContent ul.socialIcons li a i {
     color: white;
     font-size: clamp(1rem, 1.1vw, 1.2rem);
     background: #ff5768;
@@ -605,101 +696,112 @@ footer
     transition: .1s;
     padding: .4rem;
 }
-.containerFooter .footerContent ul.socialIcons li a i:hover
-{
+
+.containerFooter .footerContent ul.socialIcons li a i:hover {
     background: #df3748;
 }
-.footerBot
-{
+
+.footerBot {
     background: #111;
     text-align: center;
     padding: 10px 0;
     color: #fff8e8;
 }
-.footerBot span i
-{
+
+.footerBot span i {
     color: #ff5768;
 }
-.footerBot span a
-{
+
+.footerBot span a {
     text-decoration: none;
     color: #ff5768;
 }
+
 /*RESPONSIVE*/
 @media only screen and (max-width: 900px) {
-    .containerReviews
-    {
+    .containerReviews {
         grid-template-columns: repeat(1, 100%);
     }
-    .containerReview
-    {
+
+    .containerReview {
         grid-template-columns: repeat(2, 1fr);
     }
-    .containerReview .card
-    {
+
+    .containerReview .card {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .about
-    {
+
+    .about {
         flex-direction: column;
     }
-    .about .contentBx
-    {
+
+    .about .contentBx {
         width: 100%;
     }
-    .about .imgBx
-    {
+
+    .about .imgBx {
         width: 100%;
         height: 400px;
     }
 }
+
 @media only screen and (max-width: 750px) {
-    .containerReview
-    {
+    .containerReview {
         grid-template-columns: repeat(1, 1fr);
     }
-    .containerReview .card
-    {
+
+    .containerReview .card {
         flex-direction: row;
-        justify-content:initial;
+        justify-content: initial;
     }
+    .containerFooter
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .containerFooter .footerContent {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
 }
+
 @media only screen and (max-width: 600px) {
     .services {
         padding: 20px;
     }
-    .containerInfoContact
-    {
+
+    .containerInfoContact {
         padding-inline: 2rem;
     }
-    .about .contentBx 
-    {
+
+    .about .contentBx {
         padding: 1rem;
     }
 }
+
 @media only screen and (max-width: 500px) {
-    .containerInfoContact
-    {
+    .containerInfoContact {
         padding-inline: 1rem;
     }
-    .containerInfoContact h1
-    {
+
+    .containerInfoContact h1 {
         text-align: center;
     }
-    .containerInfoContact .links
-    {
+
+    .containerInfoContact .links {
         justify-content: center;
         align-items: center;
         margin-bottom: 2rem;
     }
-    .containerReviews
-    {
+
+    .containerReviews {
         padding: 1rem;
     }
-    .containerReview .card
-    {
+
+    .containerReview .card {
         flex-direction: column;
         justify-content: center;
         align-items: center;

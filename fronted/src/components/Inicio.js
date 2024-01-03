@@ -7,7 +7,7 @@ import MetaData from './layout/metadata';
 import { Banner } from './banner';
 import { AboutUs } from './abouts_us';
 import {Services} from './services/services'
-import { Reviews } from './reviews';
+import { Reviews } from './reviews/reviews';
 
 export const Inicio = () => {
     return (

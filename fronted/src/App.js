@@ -34,7 +34,8 @@ import { PreinscriptionDetails } from './components/admin/preinscriptionDetails'
 import { MyOrder } from './components/preinscriptions/myOrder';
 import { MyOrderDetails } from './components/preinscriptions/DetailsMyOrder';
 import { Employee } from './components/admin/employee';
-import { Reviews } from './components/reviews';
+import { Reviews } from './components/reviews/reviews';
+import { Comentarios } from './components/reviews/comentarios';
 
 
 function App() {
@@ -63,6 +64,7 @@ function App() {
           <Route path='/resetPassword/:token' element={<ResetPassword></ResetPassword>}></Route>
           <Route path='/preinscription/:idService/:idProduct' element={<Preinscription></Preinscription>}></Route>
           <Route path='/#reviews' element={<Reviews></Reviews>}></Route>
+          <Route path='/comentarios' element={<Comentarios></Comentarios>}></Route>
           
 
           {/*Rutas Protegida*/}

@@ -4,7 +4,7 @@ import { composeWithDevTools} from 'redux-devtools-extension';
 import { servicesReducer, serviceDetailsReducer, newServiceReducer, serviceReducer, newProductReducer, getProductsReducer, productDetailsReducer} from './reducer/services_reducer';
 import { UsersReducer, authReducer,forgotPasswordReducer, loginReducer, userDetailsReducer, userReducer } from './reducer/user_reducer';
 import { myOrdersReducer, newPreinscriptionReducer, preinscriptionDetailsReducer, preinscriptionReducer, preinscriptionsReducer } from './reducer/preinscriptions_reducer';
-
+import { newReviewReducer, reviewsReducer, deleteReviewReducer } from './reducer/reviews_reducer';
 const reducer= combineReducers ({
     //SERVICIOS
     services:servicesReducer,
@@ -27,6 +27,10 @@ const reducer= combineReducers ({
     newPreinscription: newPreinscriptionReducer,
     preinscription: preinscriptionReducer,
     myOrders: myOrdersReducer,
+    //REVIEWS
+    newReview: newReviewReducer,
+    reviews: reviewsReducer,
+    deleteReview: deleteReviewReducer,
     
     
 })

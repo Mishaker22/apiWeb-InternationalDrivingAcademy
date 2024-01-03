@@ -10,4 +10,7 @@ router.use("/user",rutaUsuario);
 const rutaPreinscripcion=require('./route_preinscription');
 router.use("/preinscription",rutaPreinscripcion);
 
+const rutaReview=require('./route_reviews');
+router.use("/review", rutaReview)
+
 module.exports=router;
